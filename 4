@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int s0,v; double p;
+cout<<"P= "; cin>>p;
+v=0; s0=1000;
+while (s0<=1100)
+{s0=s0+p/100*s0;v=v+1;}
+cout<<"V= "<<v<<endl;
+cout<<"S= "<<s0<<endl;
+return 0;
+}
