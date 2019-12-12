@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int t, c, K, N, s;
+K = 1;
+t = 0;
+c = 1;
+cout<<"N= "; cin >> N;
+while (c != N) {
+K++;
+s = c;
+c += t;
+t = s;
+}
+cout <<"K= "<< K << endl;
+}
